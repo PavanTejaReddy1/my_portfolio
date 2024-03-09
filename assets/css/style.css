@@ -17,7 +17,8 @@ body{
 
 body::-webkit-scrollbar {
     width: 0px;              
-  }
+}
+
 /*------------------header-----------------*/
 
 #header{
@@ -115,8 +116,9 @@ body::-webkit-scrollbar {
 }
 
 .home-text h1 span{
- color: #ff004f;
+    color: #ff004f;
 }
+
 .section{
     padding-right: 0 15%;
 }
@@ -249,16 +251,16 @@ nav .bx{
 }
 
 .tab-contents ul li span{
-color: #b54769;
-font-size: 14px;
+    color: #b54769;
+    font-size: 14px;
 }
 
 .tab-contents{
-display: none;
+    display: none;
 }
 
 .tab-contents.active-tab{
-display: block;
+    display: block;
 }
 
 #abt.bx.bx-chevrons-down{
@@ -282,6 +284,8 @@ display: block;
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-top: 1rem; /* Adjust margin */
+    justify-content: center;
 }
 
 .btn{
@@ -304,19 +308,55 @@ display: block;
 .btn-color-2 {
     background: none;
     cursor: pointer;
+    border: 1px solid #ff004f; /* Add border for consistency */
+    padding: 0.5rem 1rem; /* Adjust padding */
+    border-radius: 1rem;
 } 
 
 .btn-color-2:hover {
-    border: rgb(255,0,0) 0.1rem solid;
+    background: #ff004f;
 }
 
 .details-container { 
     padding: 1.5rem;
     flex: 1;
-    background: #080808; 
-    border-radius: 2rem;
-    border-color:Urgb(163, 163, 163);
+    background: #080808;
+    border-radius: 10px;
+    border-color: #a3a3a3;
     text-align: center;
+    margin: 1rem; /* Adjust the margin as needed */
+    width: calc(33.33% - 2rem); /* Adjust the width as needed */
+    box-sizing: border-box;
+}
+
+.details-container.color-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: #080808;
+    text-align: center;
+    margin-top: 2rem; /* Adjust margin */
+}
+
+.article-container.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#project h3{
+    color: #b54769;
+}
+
+#project2 h3{
+    color: #b54769;
+}
+
+.project-img2 { 
+    width: 40%; 
+}
+
+.project-img { 
+    width: 70%; 
 }
 
 .experience-details-container{
@@ -376,29 +416,11 @@ display: block;
 
 .layer{
     height: 0;
-    width: 65.5%;
+    width: 67.5%;
     background: linear-gradient(rgba(0,0,0,0.6), #262626);
     border-radius: 10px;
     position: absolute;
-    margin-left: 15%;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    transition: height 0.5s;
-}
-
-.layer3{
-    height: 0;
-    width: 58%;
-    background: linear-gradient(rgba(0,0,0,0.6), #262626);
-    border-radius: 10px;
-    position: absolute;
-    left: 23%;
+    margin-left: 14%;
     bottom: 0;
     overflow: hidden;
     display: flex;
@@ -412,11 +434,11 @@ display: block;
 
 .layer4{
     height: 0;
-    width: 20%;
-    background: linear-gradient(rgba(0,0,0,0.6), #262626);
+    width: 40%; /* Adjust width for consistency */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #262626);
     border-radius: 10px;
     position: absolute;
-    left: 0;
+    left: 17.5%; /* Adjust left position for consistency */
     bottom: 0;
     overflow: hidden;
     display: flex;
@@ -424,16 +446,31 @@ display: block;
     justify-content: center;
     flex-direction: column;
     padding: 0 40px;
+    text-align: center;
     transition: height 0.5s;
-    margin-left: 40%;
+    margin-left: 12.5%
 }
 
+.project4{
+    height: 0;
+    width: 50%; /* Adjust width for consistency */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #262626);
+    border-radius: 10px;
+    position: absolute;
+    left: 17.5%; /* Adjust left position for consistency */
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+    margin-left: 7.5%
+}
 
 .layer h3{
-    margin-bottom: 20px;
-}
-
-.layer3 h3{
     margin-bottom: 20px;
 }
 
@@ -441,15 +478,19 @@ display: block;
     margin-bottom: 20px;
 }
 
+.project4 h3{
+    margin-bottom: 20px;
+}
+
 .work:hover .layer{
     height: 100%;
 }
 
-.work:hover .layer3{
+.work2:hover .layer4{
     height: 100%;
 }
 
-.work2:hover .layer4{
+.work2:hover .project4{
     height: 100%;
 }
 

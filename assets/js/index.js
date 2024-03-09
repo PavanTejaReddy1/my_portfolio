@@ -45,7 +45,7 @@ function toggleAdditionalDetails(Id) {
     const showMoreBtn = document.querySelector(`.show-more-btn[onclick*='${Id}']`);
 
     if (project.style.display === 'none') {
-        project.style.display = 'block';
+        project.style.display = 'flex';
         showMoreBtn.textContent = 'Show Less';
     } else {
         project.style.display = 'none';
