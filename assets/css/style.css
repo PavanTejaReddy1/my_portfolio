@@ -730,9 +730,26 @@ form .btn2{
         width: 100%;
     }
 
+    .details-container { 
+        background: #080808;
+        margin: auto; 
+        width: 100%;     
+    }
+    
+    .details-container.color-container {
+        text-align: center;
+    }
+
     .experience-details-container{
         display: block;
-        border: none;
+    }
+
+    .article-container.work{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        padding: 4px;
     }
 
     #projects{
@@ -776,15 +793,23 @@ form .btn2{
         display: none;
     }
 
-    .layer2{
+    .layer4{
         display: none;
     }
 
-    .layer3{
+    .project4{
         display: none;
     }
 
     .article-container.work{
         left: 0%;
+    } 
+
+    .project-image2{
+        width: 100%;
+    }
+
+    .project-img2{
+        width: 100%;
     }
 }
