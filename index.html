@@ -3,250 +3,290 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="description" content="Portfolio of Pavan Teja Reddy - Front-End Developer">
+    <title>Pavan Teja Reddy | Front-End Developer</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!------------------header----------------->
-    <header id="header">
-        <a href="#home">
-            <img src="assets/imgs/Untitled (2).png" class="logo">
-        </a>
-
-            <nav class="navbar">
-                <ul id="sidemenu">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#project">Projects</a>
-                    <a href="#contact">Contact</a>
-                    <i class='bx bx-x' onclick="closemenu()"></i>
-                </ul>
-                <i class='bx bx-menu' onclick="openmenu()"></i>
-            </nav>
-    </header>
-
-    <!------------------home----------------->
-
-    <section id="home">
-        <div class="small-img">
-            <img src="assets/imgs/Picsart_23-11-13_01-23-46-663.jpg" alt="" width="80%" align="center">
-        </div>
-        <div class="home-text">
-            <h2 class="textanim">Hlo, I'am </h2>
-            <h1><span>Pavan Teja Reddy</span></h1>
-            <p class="textanim">Front-End Developer</p>
-        </div> 
-        <div class="home-img">
-            <img src="assets/imgs/Picsart_23-11-13_01-23-46-663.jpg" alt="" width="80%">
-        </div>
-        <i class='bx bx-chevrons-down' style='color:#d21616' onclick="location.href='#about'"></i>
-    </section>
-
-    <!------------------about----------------->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="assets/imgs/IMG_1294.PNG">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Efficient and knowledgeable coder with skills 
-                    in Web Development. 
-                    Coordinated and collaborative team player with attention 
-                    to detail, graphic design skills, and ability to contribute 
-                    to code base improvement initiatives and UX improvement 
-                    projects.</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li>HTML5, CSS, JavaScript<br></li>
-                            <li>CSS Flex<br></li>
-                            <li>Bootstrap<br></li>
-                            <li>GitHub<br></li>
-                            <li>Angular basics<br></li>
-                            <li>React Basics<br></li>
-                            <li>MySql<br></li>
-                            <li>Python Programming<br></li>
-                            <li>C programming<br></li>
-                            <li>PHP<br></li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2021-25</span><br>BTech</li>
-                            <li><span>2019-21</span><br>Intermediate</li>
-                            <li><span>2018-19</span><br>Ssc</li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">Pavan Teja Reddy</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <!------------------projects----------------->
-
-    <section id="project">
-        <p class="browse" align="center">Browse My Recent</p>
-        <h1 class="title" align="center">Projects</h1>
-        <div class="experience-details-container">
-            <div class="details-container color-container">
-                <div class="article-container work">
-                    <img src="assets/imgs/IMG_3136.PNG" alt="project 1" class="project-img">
-                    <div class="layer">
-                        <h3>E-Commerce</h3>
-                        <p>E-commerce websites typically display products or services along with detailed descriptions, images, prices, and any available variations (e.g, sizes, colors). Each product usually has its own dedicated page with relevant information</p>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">Pavan Teja Reddy</h1>
+                    <h2 class="hero-title">Front-End Developer</h2>
+                    <p class="hero-description">
+                        Crafting beautiful, responsive, and user-friendly web experiences
+                        with modern technologies and creative solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                     </div>
-                </div>
-                <h2 class="experience-sub-title project-title">Project One</h2>
-                <h3 class="experience-sub-title project-title">(E-Commerce)</h3>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PavanTejaReddy1/E-Commerce'">
-                        Github
-                    </button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://e-commerce-shooper.netlify.app/'">
-                        Live Demo
-                    </button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container work">
-                    <img src="assets/imgs/IMG_2129.PNG" alt="project 2" class="project-img">
-                    <div class="layer">
-                        <h3>Weather App</h3>
-                        <p>The application allows users to get information on various cities in real time. With the help of API, we are fetching the weather details of the city which is been searched by the user.</p>
-                    </div>
-                </div>
-                <h2 class="experience-sub-title project-title">Project Two</h2>
-                <h3 class="experience-sub-title project-title">(Weather App)</h3>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PavanTejaReddy1/React-Weather-App'">
-                        Github
-                    </button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://weather-app96.netlify.app/'">
-                        Live Demo
-                    </button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container work">
-                    <img src="assets/imgs/IMG_1496.PNG" alt="project 3" class="project-img">
-                    <div class="layer">
-                        <h3>TO-DO-LIST</h3>
-                        <p>To-Do List project is an application specially built to keep track of errands or tasks that need to be done.This application will be like a task keeper where the user would be able to enter the tasks that they need to do.</p>
-                    </div>
-                </div>
-                <h2 class="experience-sub-title project-title">Project Three</h2>
-                <h3 class="experience-sub-title project-title">(TO-DO-LIST)</h3>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PavanTejaReddy1/OctaNet-_November-/tree/main/Task%202-To-Do-List'">
-                        Github
-                    </button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://to-do-list-8.netlify.app/'">
-                        Live Demo
-                    </button>
-                </div>
-            </div>
-        </div>
-        <i class='bx bx-chevrons-down' style='color:#d21616' onclick="location.href='#project'" id="abt"></i>
-        <i class='bx bx-chevrons-down' style='color:#d21616' onclick="location.href='#contact'" id="prjcts"></i>
-        <i class='bx bx-chevrons-up' style='color:#d21616' onclick="location.href='#home'" id="btm"></i>
-    </section>
-    <section>
-        <div id="project2" style="display: none;">
-            <div class="experience-details-container">
-                <div class="details-container color-container">
-                    <div class="article-container work2">
-                        <img src="assets/imgs/project 1.png" alt="project 4" class="project-image2" width="50%">
-                        <div class="project4">
-                            <h3>Realphone project</h3> 
-                            <p>Realphone Web Application-To provide an efficient,user-friendly,and visually appealing platform for consumers to research,compare,and buy smartphones from multiple vendors.</p>
-                        </div>
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Four</h2>
-                    <h3 class="experience-sub-title project-title">(Realphone project)</h3>
-                    <div class="btn-container2">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PavanTejaReddy1/Realphone-Project'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://realphone-project-12345.netlify.app/'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="experience-details-container">
-                <div class="details-container color-container">
-                    <div class="article-container work2">
-                        <img src="assets/imgs/IMG_1497.PNG" alt="project 5" class="project-img2">
-                        <div class="layer4">
-                            <h3>Instagram Landing Page</h3> 
-                            <p>This landing page serves as an introduction to Instagram profile, providing visitors with a preview of Instagram content and encouraging them to follow the account</p>
-                        </div>
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Five</h2>
-                    <h3 class="experience-sub-title project-title">(Instagram Landing Page)</h3>
-                    <div class="btn-container2">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PavanTejaReddy1/OctaNet-_November-/tree/main/Task%201-Landing%20Page'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://insta-landing-page-1.netlify.app/'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-            </div>  
-        </div>
-        <button class="btn btn2 show-more-btn" onclick="toggleAdditionalDetails('project2')">Show More</button>
-    </section>
-
-    <!------------------contact----------------->
-    
-    <div id="contact">
-        <div class="conatiner">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="contact-title">Contact Me</h1>
-                    <p><i class='bx bx-envelope'></i>pavantejareddy85@gmail.com</p>
-                    <p><i class='bx bxs-phone'></i>9182336049</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/pavanteja.reddy.900" target="_blank">
-                            <i class='bx bxl-facebook-square'></i>
-                        </a>
-                        <a href="https://www.instagram.com/__.mr._pavan__/" target="_blank">
-                            <i class='bx bxl-instagram-alt'></i>
-                        </a>
-                        <a href="https://twitter.com/PavanTejaR12891" target="_blank">
-                            <i class='bx bxl-twitter'></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/pavan-teja-reddy-a0b582283/" target="_blank">
+                    <div class="hero-social">
+                        <a href="https://www.linkedin.com/in/pavan-teja-reddy-a0b582283/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <i class='bx bxl-linkedin-square'></i>
                         </a>
+                        <a href="https://github.com/PavanTejaReddy1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="https://www.instagram.com/__.mr._pavan__/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class='bx bxl-instagram-alt'></i>
+                        </a>
+                        <a href="https://twitter.com/PavanTejaR12891" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
                     </div>
-                    <a href="C:\Users\pavan\OneDrive\Pictures\pavan resume.pdf" download class="btn btn2">Show Resume</a>
                 </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required="">
-                        <input type="email" name="Email" placeholder="Your Email" required="">
-                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="assets/imgs/profile.jpg" alt="Pavan Teja Reddy" class="profile-image">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="copyright">
-        <p>copyright © pavan teja reddy.</p>
-    </div>
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About</span>
+                <h2 class="section-title">Get to Know Me</h2>
+                <p class="section-description">
+                    Passionate developer dedicated to creating exceptional digital experiences
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <p>
+                            Efficient and knowledgeable coder with skills in Web Development. 
+                            Coordinated and collaborative team player with attention to detail, 
+                            graphic design skills, and ability to contribute to code base improvement 
+                            initiatives and UX improvement projects.
+                        </p>
+                    </div>
+                    <div class="about-tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="skills">Skills</button>
+                            <button class="tab-btn" data-tab="education">Education</button>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="skills">
+                                <div class="skills-grid">
+                                    <div class="skill-item">
+                                        <i class='bx bx-code-alt'></i>
+                                        <span>HTML5, CSS, JavaScript</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class='bx bxl-react'></i>
+                                        <span>React Basics</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class='bx bxl-angular'></i>
+                                        <span>Angular Basics</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class='bx bxl-bootstrap'></i>
+                                        <span>Bootstrap</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class='bx bxl-github'></i>
+                                        <span>GitHub</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class='bx bxl-python'></i>
+                                        <span>Python Programming</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class='bx bx-code-curly'></i>
+                                        <span>C Programming</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class='bx bx-layout'></i>
+                                        <span>CSS Flex</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="education">
+                                <div class="education-list">
+                                    <div class="education-item">
+                                        <div class="education-year">2021 - 2025</div>
+                                        <div class="education-details">
+                                            <h3>BTech</h3>
+                                            <p>Bachelor of Technology</p>
+                                        </div>
+                                    </div>
+                                    <div class="education-item">
+                                        <div class="education-year">2019 - 2021</div>
+                                        <div class="education-details">
+                                            <h3>Intermediate</h3>
+                                            <p>Higher Secondary Education</p>
+                                        </div>
+                                    </div>
+                                    <div class="education-item">
+                                        <div class="education-year">2018 - 2019</div>
+                                        <div class="education-details">
+                                            <h3>SSC</h3>
+                                            <p>Secondary School Certificate</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Projects</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    A collection of projects showcasing my skills and creativity
+                </p>
+            </div>
+            <div class="projects-grid" id="featured-projects">
+                <!-- Projects will be dynamically rendered here -->
+            </div>
+            <div class="projects-grid additional-projects" id="additional-projects" style="display: none;">
+                <!-- Additional projects will be dynamically rendered here -->
+            </div>
+            <div class="projects-footer">
+                <button class="btn btn-outline show-more-btn" id="show-more-btn">
+                    <span class="btn-text">Show More</span>
+                    <i class='bx bx-chevron-down'></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-description">
+                    Have a project in mind? I'd love to hear from you
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class='bx bx-envelope'></i>
+                        </div>
+                        <h3>Email</h3>
+                        <a href="mailto:pavantejareddy85@gmail.com">pavantejareddy85@gmail.com</a>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class='bx bx-phone'></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <a href="tel:9182336049">+91 9182336049</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/pavan-teja-reddy-a0b582283/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <i class='bx bxl-linkedin-square'></i>
+                        </a>
+                        <a href="https://github.com/PavanTejaReddy1" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="https://www.instagram.com/__.mr._pavan__/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <i class='bx bxl-instagram-alt'></i>
+                        </a>
+                        <a href="https://twitter.com/PavanTejaR12891" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" name="submit-to-google-sheet" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="Name" id="name" placeholder="Your Name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="Email" id="email" placeholder="Your Email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Message" id="message" rows="5" placeholder="Your Message" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <i class='bx bx-send'></i>
+                        </button>
+                        <div class="form-message" id="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="current-year"></span> Pavan Teja Reddy. All rights reserved.</p>
+                <p class="footer-tagline">Built with <i class='bx bx-heart'></i> and passion</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/projects-data.js"></script>
     <script src="assets/js/index.js"></script>
+    <script>
+        // Set current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
