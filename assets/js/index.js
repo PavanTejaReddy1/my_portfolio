@@ -259,7 +259,6 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">${project.title}</h3>
                         <p class="project-subtitle">${project.subtitle}</p>
                         <p class="project-description">${project.description}</p>
                         <div class="project-links">
